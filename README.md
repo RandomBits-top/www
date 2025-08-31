@@ -1,2 +1,3 @@
-# Random Bits
-Landing page for random Bits of info organized as microsites.
+# Italia Cafe
+Unofficial guide for the [Italia Cafe Super Automaded Espresso](https://italiacafe.randombits.top) machine
+
