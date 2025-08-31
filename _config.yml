@@ -3,3 +3,4 @@ plugins:
 - jekyll-remote-theme
 markdown: GFM
 show_downloads: false
+show_github: false
