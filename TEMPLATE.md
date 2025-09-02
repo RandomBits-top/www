@@ -4,7 +4,6 @@ module.exports = {
   "PUBLIC_REPOS": {
     type: 'repos',
     params: `
-      first: 2,
       privacy: PUBLIC,
       ownerAffiliations:["RandomBits-top",
       orderBy: { field:REPO_PUSHED_DATE, direction: DESC },
