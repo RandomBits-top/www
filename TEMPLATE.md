@@ -64,6 +64,6 @@ module.exports = {
 | [{{ REPO_FULL_NAME }}]({{ REPO_URL }}) | [{{ REPO_NAME }}]({{ REPO_HOMEPAGE_URL }}) | {{ REPO_DESCRIPTION }} |
 {{ end PUBLIC_REPOS }}
 
-{{loop REPOTEST }}
-
+{{ loop REPOTEST }}
+{{ REPO_FULL_NAME }}
 {{ end REPOTEST }}
