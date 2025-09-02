@@ -16,9 +16,8 @@ module.exports = {
     query: async (octokit, moment, user) => {
       // You can do anything  you want with the GitHub API here.
       const result = await octokit.graphql(`
-
         query {
-            repositories(`first: 10, privacy: PUBLIC, ownerAffiliations:[ORGANIZATION_MEMBER], orderBy: { field:UPDATED_AT, direction: DESC }`) {
+            repositories(`first: 10`) {
               edges {
                 node {
                   REPO_NAME: name
@@ -28,7 +27,7 @@ module.exports = {
                   REPO_FULL_NAME: nameWithOwner
                   REPO_DESCRIPTION: description
                   REPO_URL: url
-                  REPO_HOMEPAGE_URL: homepageUrl ||| ""
+                  REPO_HOMEPAGE_URL: homepageUrl || ""
                   REPO_CREATED_TIMESTAMP: createdAt
                   REPO_PUSHED_TIMESTAMP: pushedAt
                   diskUsage
