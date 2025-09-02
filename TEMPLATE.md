@@ -7,7 +7,7 @@ module.exports = {
     query: async (octokit, moment, user) => {
       const result = await octokit.graphql(`
         query {
-            repositories(first: 10) {
+            repositories(owner:"sedgett") {
               edges {
                 node {
                   REPO_NAME: name
