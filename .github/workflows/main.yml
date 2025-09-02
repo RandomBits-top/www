@@ -16,7 +16,7 @@ jobs:
     - name: Generate README.md
       uses: probablykasper/readme-template-action@v1
       with:
-        #token: ${{ secrets.README_TEMPLATE_TOKEN }}
+        token: ${{ secrets.README_TEMPLATE_TOKEN }}
         template: TEMPLATE.md
         output: README.md
     - name: Update README.md
