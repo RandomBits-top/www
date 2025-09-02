@@ -6,15 +6,30 @@ module.exports = {
     loop: true,
     query: async (octokit, moment, user) => {
       const result = await octokit.graphql(`
-        query {
-            repositories(owner:"sedgett") {
-              edges {
-                node {
-                  REPO_NAME: name
-                  }
-                }
-              }
-            }
+query {
+  search(query: "is:public", type: REPOSITORY, first: 50) {
+    repositoryCount
+    pageInfo {
+      endCursor
+      startCursor
+      hasNextPage
+    }
+    edges {
+      node {
+        ... on Repository {
+          name
+          url
+          createdAt
+          updatedAt
+          description
+          owner {
+            login
+          }
+        }
+      }
+    }
+  }
+}
       `)
       const repoEdges = queryResult.viewer.repositories.edges
       const repos = []
