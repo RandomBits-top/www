@@ -18,7 +18,7 @@ module.exports = {
       const result = await octokit.graphql(`
 
         query {
-            repositories() {
+            repositories(`first: 10, privacy: PUBLIC, ownerAffiliations:[ORGANIZATION_MEMBER], orderBy: { field:UPDATED_AT, direction: DESC }`) {
               edges {
                 node {
                   REPO_NAME: name
