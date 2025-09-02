@@ -31,7 +31,7 @@ module.exports = {
           }
         }
       `)
-      const repoEdges = result.repositories.edges
+
       const repos = []
       return repos
     }
