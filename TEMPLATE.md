@@ -1,6 +1,5 @@
 ```js
 // {{ TEMPLATE: }}
-}
 module.exports = {
   "PUBLIC_REPOS": {
     type: 'repos',
