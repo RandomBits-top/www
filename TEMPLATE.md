@@ -9,7 +9,7 @@ module.exports = {
       ownerAffiliations:["RandomBits-top",
       orderBy: { field:REPO_PUSHED_DATE, direction: DESC },
     `,
-  },
+  }
 // {{ :TEMPLATE }}
 
 | 📦Repo    | ⭐️ WWW | 📚Description |
