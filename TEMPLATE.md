@@ -8,7 +8,8 @@ module.exports = {
       privacy: PUBLIC,
       ownerAffiliations:[ORGANIZATION_MEMBER],
       orderBy: { field:UPDATED_AT, direction: DESC },
-    `,
+    `
+  },
   "TEST" : {
     type: 'customQuery',
     loop: false,
