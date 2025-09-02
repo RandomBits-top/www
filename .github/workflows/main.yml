@@ -3,7 +3,8 @@ on:
   schedule:
     - cron: '0 */6 * * *' # every 6 hours
   push:
-    branches: [ master ]
+    paths:
+      - 'TEMPLATE.md'  
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
