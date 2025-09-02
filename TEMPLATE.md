@@ -32,7 +32,7 @@ module.exports = {
         }
       `)
       const repoEdges = result.repositories.edges
-#      const repos = []
+      const repos = []
 #      for (const repoEdge of repoEdges) {
 #        let repo = repoEdge.node
 #        repo = fixRepoValues(repo)
