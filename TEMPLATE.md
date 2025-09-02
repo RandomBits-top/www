@@ -17,7 +17,7 @@ module.exports = {
                   REPO_FULL_NAME: nameWithOwner
                   REPO_DESCRIPTION: description
                   REPO_URL: url
-                  REPO_HOMEPAGE_URL: homepageUrl || "#"
+                  REPO_HOMEPAGE_URL: homepageUrl 
                   REPO_CREATED_TIMESTAMP: createdAt
                   REPO_PUSHED_TIMESTAMP: pushedAt
                   diskUsage
