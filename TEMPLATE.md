@@ -5,10 +5,11 @@ module.exports = {
     type: 'repos',
     params: `
       privacy: PUBLIC,
-      ownerAffiliations:["RandomBits-top",
+      ownerAffiliations:["RandomBits-top"],
       orderBy: { field:REPO_PUSHED_DATE, direction: DESC },
     `,
   }
+}
 // {{ :TEMPLATE }}
 ```
 
