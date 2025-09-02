@@ -17,7 +17,7 @@ module.exports = {
       // You can do anything  you want with the GitHub API here.
       const result = await octokit.graphql(`
         query {
-            repositories(`first: 10`) {
+            repositories({first: 10}) {
               edges {
                 node {
                   REPO_NAME: name
