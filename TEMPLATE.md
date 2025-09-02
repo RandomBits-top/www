@@ -6,39 +6,38 @@ module.exports = {
     loop: true,
     query: async (octokit, moment, user) => {
       const result = await octokit.graphql(`
-query {
-  search(query: "is:public", type: REPOSITORY, first: 50) {
-    repositoryCount
-    pageInfo {
-      endCursor
-      startCursor
-      hasNextPage
-    }
-    edges {
-      node {
-        ... on Repository {
-          name
-          url
-          createdAt
-          updatedAt
-          description
-          owner {
-            login
+        query {
+          search(query: "is:public", type: REPOSITORY, first: 50) {
+            repositoryCount
+            pageInfo {
+              endCursor
+              startCursor
+              hasNextPage
+            }
+            edges {
+              node {
+                ... on Repository {
+                  name
+                  url
+                  createdAt
+                  updatedAt
+                  description
+                  owner {
+                    login
+                  }
+                }
+              }
+            }
           }
         }
-      }
-    }
-  }
-}
       `)
-#      const repoEdges = queryResult.viewer.repositories.edges
       const repoEdges = result.repositories.edges
-      const repos = []
-      for (const repoEdge of repoEdges) {
-        let repo = repoEdge.node
-        repo = fixRepoValues(repo)
-        repos.push(repo)
-      }
+#      const repos = []
+#      for (const repoEdge of repoEdges) {
+#        let repo = repoEdge.node
+#        repo = fixRepoValues(repo)
+#        repos.push(repo)
+#      }
       return repos
     }
   }
