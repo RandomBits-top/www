@@ -5,8 +5,8 @@ module.exports = {
     type: 'repos',
     params: `
       privacy: PUBLIC,
-      ownerAffiliations:[OWNER],
-      orderBy: { field:REPO_PUSHED_DATE, direction: DESC },
+      ownerAffiliations:[ORGANIZATION_MEMBER],
+      orderBy: { field:UPDATED_AT, direction: DESC },
     `,
   }
 }
