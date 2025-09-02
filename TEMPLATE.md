@@ -4,6 +4,7 @@ module.exports = {
   "PUBLIC_REPOS": {
     type: 'repos',
     params: `
+      first: 10,
       privacy: PUBLIC,
       ownerAffiliations:[ORGANIZATION_MEMBER],
       orderBy: { field:UPDATED_AT, direction: DESC },
