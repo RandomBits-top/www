@@ -31,7 +31,8 @@ query {
   }
 }
       `)
-      const repoEdges = queryResult.viewer.repositories.edges
+#      const repoEdges = queryResult.viewer.repositories.edges
+      const repoEdges = result.repositories.edges
       const repos = []
       for (const repoEdge of repoEdges) {
         let repo = repoEdge.node
