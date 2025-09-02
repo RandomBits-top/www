@@ -1,3 +1,6 @@
+```js
+// {{ TEMPLATE: }}
+}
 module.exports = {
   "PUBLIC_REPOS": {
     type: 'repos',
@@ -8,6 +11,7 @@ module.exports = {
       orderBy: { field:REPO_PUSHED_DATE, direction: DESC },
     `,
   },
+// {{ :TEMPLATE }}
 
 | 📦Repo    | ⭐️ WWW | 📚Description |
 | --------- | ----------- | -------------- |
