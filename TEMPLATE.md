@@ -6,11 +6,14 @@ module.exports = {
     params: `
       first: 10,
       privacy: PUBLIC,
-      has_pages: true,
       ownerAffiliations:[ORGANIZATION_MEMBER],
       orderBy: { field:UPDATED_AT, direction: DESC },
     `,
-  }
+  },
+  modifyVariables: function(repo, moment, user) {
+      repo.INCLUDE = true
+      return repo
+    },
 }
 // {{ :TEMPLATE }}
 ```
