@@ -21,7 +21,7 @@ module.exports = {
         }
       `);
       const nodes = result.organization.repositories.nodes;
-      const repos[]
+      const repos=[]
       //loop nodes, populate repos, editing along the way
       for (const repo of nodes) {
         repo = fixRepoValues(repo)
