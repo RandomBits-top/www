@@ -42,7 +42,7 @@ module.exports = {
 ```
 
 | 📦Project    | 📚Description |
-| --------- | ----------- | -------------- |
+| ---------  | -------------- |
 {{ loop PUBLIC_REPOS }}
 | [{{ REPO_NAME }}]({{ REPO_HOMEPAGE_URL }}) | {{ REPO_DESCRIPTION }} |
 {{ end PUBLIC_REPOS }}
