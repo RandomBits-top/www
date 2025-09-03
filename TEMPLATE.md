@@ -7,7 +7,6 @@ module.exports = {
     query: async (octokit, moment, user) => {
       const result = await octokit.graphql(`
         query {
-        organization(login: "RandomBits-top") {
           repositories(first: 100) {
             nodes {
               name
@@ -17,8 +16,7 @@ module.exports = {
             }
           }
         }
-      }
-   ')
+     ')
   }
 }
 // {{ :TEMPLATE }}
