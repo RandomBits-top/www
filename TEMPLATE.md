@@ -16,9 +16,7 @@ module.exports = {
             }
           }
         }
-       ') // End of result await command
-      const repos =  result.repositories.nodes;
-      return repos
+       ') 
     }
   }
 }
