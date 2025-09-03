@@ -12,7 +12,7 @@ module.exports = {
               nodes {
                 REPO_NAME: name
                 REPO_FULL_NAME: nameWithOwner
-                REPO_URL: url
+                REPO_GITHUB_URL: url
                 REPO_HOMEPAGE_URL: homepageUrl
                 REPO_DESCRIPTION: description
               }
@@ -24,8 +24,11 @@ module.exports = {
       const repos=[]
       //loop nodes, populate repos, editing along the way
       for (const repo of nodes) {
-        if(repo.REPO_HOMEPAGE_URL) {
+        if(repo.REPO_HOMEPAGE_URL !== null) {
           repo.REPO_URL = repo.REPO_HOMEPAGE_URL
+        }
+        else {
+          repo.REPO_URL = REPO.REPO_GITHUB_URL
         }
         if(repo.REPO_DESCRIPTION === null) {
           repo.REPO_DESCRIPTION=" ";
