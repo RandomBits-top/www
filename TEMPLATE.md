@@ -25,7 +25,7 @@ module.exports = {
       //loop nodes, populate repos, editing along the way
       for (const repo of nodes) {
         repo = fixRepoValues(repo)
-        if(REPO_NAME != "www" {        
+        if(repo.REPO_NAME != "www") {        
           repos.push(repo)
         }
       }
