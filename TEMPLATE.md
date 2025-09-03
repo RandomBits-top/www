@@ -6,13 +6,15 @@ module.exports = {
     loop: true,
     query: async (octokit, moment, user) => {
       const result = await octokit.graphql(`
-        query {
-          repositories(first: 100) {
-            nodes {
-              name
-              url
-              homepageUrl
-              description
+        {
+          organization(login: "RandomBits-top") {
+            repositories(first: 100) {
+              nodes {
+                name
+                url
+                homepageUrl
+                description
+              }
             }
           }
         }
