@@ -28,7 +28,7 @@ module.exports = {
           repo.REPO_URL = repo.REPO_HOMEPAGE_URL
         }
         else {
-          repo.REPO_URL = REPO.REPO_GITHUB_URL
+          repo.REPO_URL = repo.REPO_GITHUB_URL
         }
         if(repo.REPO_DESCRIPTION === null) {
           repo.REPO_DESCRIPTION=" ";
