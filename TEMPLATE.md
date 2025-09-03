@@ -21,7 +21,15 @@ module.exports = {
         }
       `);
       const nodes = result.organization.repositories.nodes;
-      return nodes; // Ensure the result is returned
+      const repos[]
+      //loop nodes, populate repos, editing along the way
+      for (const repo of nodes) {
+        repo = fixRepoValues(repo)
+        if(REPO_NAME != "www" {        
+          repos.push(repo)
+        }
+      }
+      return repos
     }
   }
 };
