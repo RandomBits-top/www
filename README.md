@@ -1,8 +1,8 @@
 
 
-| 📦Repo    | ⭐️ WWW | 📚Description |
+| 📦Project    | 📚Description |
 | --------- | ----------- | -------------- |
-| [RandomBits-top/italiacafe](https://github.com/RandomBits-top/italiacafe) | [italiacafe](#) | Unofficial Guide to Cafe Italia super automatic espresso machine (distributed by RedFern) |
-| [RandomBits-top/meshtastic](https://github.com/RandomBits-top/meshtastic) | [meshtastic](#) | null |
-| [RandomBits-top/VPS-setup](https://github.com/RandomBits-top/VPS-setup) | [VPS-setup](#) | null |
+| [italiacafe](https://github.com/RandomBits-top/italiacafe) | Unofficial Guide to Cafe Italia super automatic espresso machine (distributed by RedFern) |
+| [meshtastic](https://github.com/RandomBits-top/meshtastic) |   |
+| [VPS-setup](https://github.com/RandomBits-top/VPS-setup) |   |
 
