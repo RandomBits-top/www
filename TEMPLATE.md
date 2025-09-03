@@ -11,13 +11,13 @@ module.exports = {
             repositories (first: 100) {
               nodes {
                 name
+                url
               }
             }
           }
         }
        ') // End of result await command
-
-      const repos = []
+      const repos =  result.repositories.nodes;
       return repos
     }
   }
