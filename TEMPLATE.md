@@ -7,30 +7,15 @@ module.exports = {
     query: async (octokit, moment, user) => {
       const result = await octokit.graphql(`
         query {
-          search(query: "is:public", type: REPOSITORY, first: 50) {
-            repositoryCount
-            pageInfo {
-              endCursor
-              startCursor
-              hasNextPage
-            }
-            edges {
-              node {
-                ... on Repository {
-                  name
-                  url
-                  createdAt
-                  updatedAt
-                  description
-                  owner {
-                    login
-                  }
-                }
+          organization (login: "RandomBits-top") {
+            repositories (first: 100) {
+              nodes {
+                name
               }
             }
           }
         }
-      `)
+       ') // End of result await command
 
       const repos = []
       return repos
