@@ -10,10 +10,11 @@ module.exports = {
           organization(login: "RandomBits-top") {
             repositories(first: 100) {
               nodes {
-                name
-                url
-                homepageUrl
-                description
+                REPO_NAME: name
+                REPO_FULL_NAME: nameWithOwner
+                REPO_URL: url
+                REPO_HOMEPAGE_URL: homepageUrl
+                REPO_DESCRIPTION: description
               }
             }
           }
