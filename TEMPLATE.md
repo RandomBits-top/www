@@ -24,7 +24,7 @@ module.exports = {
       const repos=[]
       //loop nodes, populate repos, editing along the way
       for (const repo of nodes) {
-        if(repo.REPO_HOMEPAGE_URL !== null) {
+        if(!isEmpty(repo.REPO_HOMEPAGE_URL)) {
           repo.REPO_URL = repo.REPO_HOMEPAGE_URL
         }
         else {
