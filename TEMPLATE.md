@@ -1,7 +1,7 @@
 ```js
 // {{ TEMPLATE: }}
 module.exports = {
-  "PUBLIC_REPOS": {
+  PUBLIC_REPOS: {
     type: 'customQuery',
     loop: true,
     query: async (octokit, moment, user) => {
@@ -16,9 +16,11 @@ module.exports = {
             }
           }
         }
-     ')
+      `);
+      return result; // Ensure the result is returned
+    }
   }
-}
+};
 // {{ :TEMPLATE }}
 ```
 
