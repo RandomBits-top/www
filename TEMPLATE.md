@@ -25,7 +25,10 @@ module.exports = {
       //loop nodes, populate repos, editing along the way
       for (const repo of nodes) {
         if(repo.REPO_HOMEPAGE_URL === null) {
-          repo.REPO_HOMEPAGE_URL = "#"
+          repo.REPO_HOMEPAGE_URL = repo.REPO_URL
+        }
+        if(repo.REPO_DESCRIPTION === null) {
+          repo.REPO_DESCRIPTION=" ";
         }
         if(repo.REPO_NAME != "www") {        
           repos.push(repo)
@@ -38,9 +41,9 @@ module.exports = {
 // {{ :TEMPLATE }}
 ```
 
-| 📦Repo    | ⭐️ WWW | 📚Description |
+| 📦Project    | 📚Description |
 | --------- | ----------- | -------------- |
 {{ loop PUBLIC_REPOS }}
-| [{{ REPO_FULL_NAME }}]({{ REPO_URL }}) | [{{ REPO_NAME }}]({{ REPO_HOMEPAGE_URL }}) | {{ REPO_DESCRIPTION }} |
+| [{{ REPO_NAME }}]({{ REPO_HOMEPAGE_URL }}) | {{ REPO_DESCRIPTION }} |
 {{ end PUBLIC_REPOS }}
 
