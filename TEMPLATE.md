@@ -19,7 +19,8 @@ module.exports = {
           }
         }
       `);
-      return result; // Ensure the result is returned
+      const nodes = result.organization.repositories.nodes;
+      return nodes; // Ensure the result is returned
     }
   }
 };
