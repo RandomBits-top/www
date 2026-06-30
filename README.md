@@ -5,4 +5,5 @@
 | [italiacafe](https://italiacafe.randombits.top/) | Unofficial Guide to Cafe Italia super automatic espresso machine (distributed by RedFern) |
 | [meshtastic](https://meshtastic.randombits.top/) | Notes on my journey with meshtastic |
 | [VPS-setup](https://setupvps.randombits.top/) | Random snippets for setting up vps |
+| [CanadaTides](https://Canadatides.randombits.top) | NA |
 
